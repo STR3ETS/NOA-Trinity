@@ -3,13 +3,29 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title', 'Cryolipolyse & Body Sculpting | N.O.A Trinity — Vetbevriezen met Body Wizard')</title>
-    <meta name="description" content="@yield('meta_description', 'Professionele cryolipolyse (vetbevriezen) en body sculpting bij N.O.A Trinity. Niet-invasieve lichaamsvormgeving met de gecertificeerde Body Wizard van Medcos. Boek een gratis consult.')">
-    <meta name="keywords" content="@yield('meta_keywords', 'cryolipolyse, vetbevriezen, body sculpting, lichaamsvormgeving, Body Wizard, Medcos, niet-invasief, vetverwijdering zonder operatie')">
+    <title>@yield('title', 'Cryolipolyse & Body Sculpting | N.O.A Trinity')</title>
+    <meta name="description" content="@yield('meta_description', 'Professionele cryolipolyse en body sculpting bij N.O.A Trinity. Niet-invasieve lichaamsvormgeving met de gecertificeerde Body Wizard van Medcos.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'cryolipolyse, vetbevriezen, body sculpting, lichaamsvormgeving, Body Wizard, Medcos, niet-invasief, vetverwijdering')">
+    <meta name="robots" content="@yield('robots', 'index, follow')">
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    {{-- Favicon --}}
+    <link rel="icon" href="/favicon.ico" sizes="any">
+
+    {{-- Open Graph --}}
     <meta property="og:title" content="@yield('og_title', 'Cryolipolyse & Body Sculpting | N.O.A Trinity')">
-    <meta property="og:description" content="@yield('og_description', 'Niet-invasieve vetverwijdering en lichaamsvormgeving met de gecertificeerde Body Wizard van Medcos. Boek een gratis consult bij N.O.A Trinity.')">
+    <meta property="og:description" content="@yield('og_description', 'Professionele cryolipolyse en body sculpting bij N.O.A Trinity. Niet-invasieve lichaamsvormgeving met de Body Wizard van Medcos.')">
     <meta property="og:type" content="website">
-    <meta name="robots" content="index, follow">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ asset('images/hero-main.jpg') }}">
+    <meta property="og:locale" content="nl_NL">
+    <meta property="og:site_name" content="N.O.A Trinity">
+
+    {{-- Twitter Card --}}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('og_title', 'Cryolipolyse & Body Sculpting | N.O.A Trinity')">
+    <meta name="twitter:description" content="@yield('og_description', 'Professionele cryolipolyse en body sculpting bij N.O.A Trinity. Niet-invasieve lichaamsvormgeving met de Body Wizard van Medcos.')">
+    <meta name="twitter:image" content="{{ asset('images/hero-main.jpg') }}">
 
     @fonts
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -215,9 +231,9 @@
                     &copy; {{ date('Y') }} N.O.A Trinity. Alle rechten voorbehouden.
                 </p>
                 <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-                    <a href="#" class="text-xs sm:text-sm text-white/40 hover:text-roze transition-colors">Privacyverklaring</a>
-                    <a href="#" class="text-xs sm:text-sm text-white/40 hover:text-roze transition-colors">Cookiebeleid</a>
-                    <a href="#" class="text-xs sm:text-sm text-white/40 hover:text-roze transition-colors">Algemene voorwaarden</a>
+                    <a href="{{ route('privacyverklaring') }}" class="text-xs sm:text-sm text-white/40 hover:text-roze transition-colors">Privacyverklaring</a>
+                    <a href="{{ route('cookiebeleid') }}" class="text-xs sm:text-sm text-white/40 hover:text-roze transition-colors">Cookiebeleid</a>
+                    <a href="{{ route('algemene-voorwaarden') }}" class="text-xs sm:text-sm text-white/40 hover:text-roze transition-colors">Algemene voorwaarden</a>
                 </div>
             </div>
             <div class="mt-6 text-right">
@@ -238,7 +254,7 @@
                     <h3 class="font-serif text-lg font-bold mb-1">Wij gebruiken cookies</h3>
                     <p class="text-sm text-zwart/60 leading-relaxed">
                         Wij gebruiken cookies om je ervaring op onze website te verbeteren en om ons websiteverkeer te analyseren. Door op "Accepteren" te klikken ga je akkoord met ons
-                        <a href="#" class="text-roze-dark underline underline-offset-2 hover:text-zwart transition-colors">cookiebeleid</a>.
+                        <a href="{{ route('cookiebeleid') }}" class="text-roze-dark underline underline-offset-2 hover:text-zwart transition-colors">cookiebeleid</a>.
                     </p>
                 </div>
                 <div class="flex items-center gap-3 shrink-0">

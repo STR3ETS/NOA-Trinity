@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Over mij | N.O.A Trinity — Het gezicht achter cryolipolyse & body sculpting')
-@section('meta_description', 'Maak kennis met het gezicht achter N.O.A Trinity. Gecertificeerd in cryolipolyse en body sculpting met de Body Wizard van Medcos. Persoonlijk, professioneel en eerlijk.')
+@section('title', 'Over mij | N.O.A Trinity')
+@section('meta_description', 'Maak kennis met de oprichter van N.O.A Trinity. Gecertificeerd in cryolipolyse en body sculpting met de Body Wizard van Medcos. Persoonlijk, professioneel en eerlijk.')
 
 @section('content')
 

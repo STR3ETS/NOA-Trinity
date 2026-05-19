@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Cryolipolyse & Body Sculpting | N.O.A Trinity — Vetbevriezen met Body Wizard')
-@section('meta_description', 'Professionele cryolipolyse (vetbevriezen) en body sculpting bij N.O.A Trinity. Niet-invasieve lichaamsvormgeving met de gecertificeerde Body Wizard van Medcos. Boek een gratis consult.')
+@section('title', 'Cryolipolyse & Body Sculpting | N.O.A Trinity')
+@section('meta_description', 'Professionele cryolipolyse en body sculpting bij N.O.A Trinity. Niet-invasieve lichaamsvormgeving met de gecertificeerde Body Wizard van Medcos.')
 
 @section('content')
 

@@ -133,6 +133,41 @@
                                 @error('bericht') <p class="text-red-500 text-xs mt-1">{{ $message }}</p> @enderror
                             </div>
 
+                            {{-- Captcha --}}
+                            <div>
+                                <label for="captcha" class="block text-sm font-semibold text-zwart mb-2">Beveiligingsvraag</label>
+                                <div class="flex items-center gap-4">
+                                    <span class="text-sm text-zwart/70 font-medium shrink-0">Wat is {{ session('captcha_a', '?') }} + {{ session('captcha_b', '?') }}?</span>
+                                    <input
+                                        type="number"
+                                        id="captcha"
+                                        name="captcha"
+                                        required
+                                        placeholder="Antwoord"
+                                        class="w-28 px-5 py-3.5 rounded-xl border border-zwart/10 bg-creme/50 text-zwart placeholder:text-zwart/40 focus:outline-none focus:border-roze-dark focus:ring-1 focus:ring-roze-dark transition-colors text-sm"
+                                    >
+                                </div>
+                                @error('captcha') <p class="text-red-500 text-xs mt-1">{{ $message }}</p> @enderror
+                            </div>
+
+                            {{-- Privacy checkbox --}}
+                            <div>
+                                <label class="flex items-start gap-3 cursor-pointer">
+                                    <input
+                                        type="checkbox"
+                                        name="privacy"
+                                        value="1"
+                                        {{ old('privacy') ? 'checked' : '' }}
+                                        required
+                                        class="mt-0.5 w-4 h-4 rounded border-zwart/20 text-roze-dark focus:ring-roze-dark focus:ring-offset-0"
+                                    >
+                                    <span class="text-sm text-zwart/60 leading-relaxed">
+                                        Ik ga akkoord met de <a href="{{ route('privacyverklaring') }}" target="_blank" class="text-roze-dark underline underline-offset-2 hover:text-zwart transition-colors">privacyverklaring</a> en geef toestemming voor het verwerken van mijn gegevens.
+                                    </span>
+                                </label>
+                                @error('privacy') <p class="text-red-500 text-xs mt-1">{{ $message }}</p> @enderror
+                            </div>
+
                             {{-- Verzenden --}}
                             <div>
                                 <button

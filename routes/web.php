@@ -25,13 +25,23 @@ Route::get('/over-mij', function () {
     return view('over-mij');
 })->name('over-mij');
 
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+Route::get('/contact', [ContactController::class, 'show'])->name('contact');
 
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
 Route::get('/gallerij', [GalleryController::class, 'index'])->name('gallerij');
+
+Route::get('/privacyverklaring', function () {
+    return view('privacyverklaring');
+})->name('privacyverklaring');
+
+Route::get('/cookiebeleid', function () {
+    return view('cookiebeleid');
+})->name('cookiebeleid');
+
+Route::get('/algemene-voorwaarden', function () {
+    return view('algemene-voorwaarden');
+})->name('algemene-voorwaarden');
 
 // Admin auth routes
 Route::get('/admin/login', [AuthController::class, 'showLogin'])->name('admin.login');

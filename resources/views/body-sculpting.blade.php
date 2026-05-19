@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Body Sculpting | N.O.A Trinity — Niet-invasieve lichaamsvormgeving')
-@section('meta_description', 'Body sculpting bij N.O.A Trinity: niet-invasieve lichaamsvormgeving die omvang vermindert, de huid verstevigt en een strakker silhouet creëert. Boek een gratis consult.')
+@section('title', 'Body Sculpting | N.O.A Trinity')
+@section('meta_description', 'Body sculpting bij N.O.A Trinity: niet-invasieve lichaamsvormgeving die omvang vermindert, de huid verstevigt en een strakker silhouet creëert.')
 
 @section('content')
 

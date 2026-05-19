@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Cryolipolyse (Vetbevriezen) | N.O.A Trinity — Body Wizard behandeling')
-@section('meta_description', 'Cryolipolyse (vetbevriezen) bij N.O.A Trinity. Verwijder hardnekkig vet zonder operatie met de gecertificeerde Body Wizard van Medcos. FDA-goedgekeurd, geen hersteltijd. Boek een gratis consult.')
+@section('title', 'Cryolipolyse (Vetbevriezen) | N.O.A Trinity')
+@section('meta_description', 'Cryolipolyse bij N.O.A Trinity: verwijder hardnekkig vet zonder operatie met de Body Wizard van Medcos. Geen hersteltijd, blijvend resultaat.')
 
 @section('content')
 
