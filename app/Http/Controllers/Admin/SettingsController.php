@@ -27,10 +27,7 @@ class SettingsController extends Controller
             'openingstijden_zo' => 'required|string|max:100',
         ]);
 
-        $settings = SiteSetting::instance();
-        $settings->update($validated);
-
-        SiteSetting::$cached = null;
+        SiteSetting::instance()->update($validated);
 
         return redirect()->route('admin.settings.edit')->with('success', 'Instellingen opgeslagen.');
     }
