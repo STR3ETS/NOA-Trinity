@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Over mij | N.O.A Trinity')
-@section('meta_description', 'Maak kennis met de oprichter van N.O.A Trinity. Gecertificeerd in cryolipolyse en body sculpting met de Body Wizard van Medcos. Persoonlijk, professioneel en eerlijk.')
+@section('meta_description', 'Maak kennis met de oprichter van N.O.A Trinity Body Shaping in Leeuwarden: cryolipolyse, body sculpting en diode laserontharing. Persoonlijk, professioneel en eerlijk.')
 
 @section('content')
 
@@ -29,7 +29,7 @@
                 <span class="text-roze-dark">N.O.A Trinity</span>
             </h1>
             <p class="reveal text-base sm:text-lg md:text-xl text-zwart/70 leading-relaxed max-w-2xl mx-auto mb-8 sm:mb-10">
-                Welkom! Ik ben de oprichter van N.O.A Trinity en het is mijn passie om mensen te helpen zich zelfverzekerd en goed te voelen in hun eigen lichaam. Met professionele cryolipolyse en body sculpting behandelingen begeleid ik jou naar het resultaat dat je verdient.
+                Welkom! Ik ben de oprichter van N.O.A Trinity en het is mijn passie om mensen te helpen zich zelfverzekerd en goed te voelen in hun eigen lichaam. Met cryolipolyse, body sculpting en diode laserontharing begeleid ik jou persoonlijk naar jouw lichaamsdoelen.
             </p>
             <a href="{{ route('contact') }}" class="reveal inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                 Maak kennis
@@ -47,10 +47,10 @@
                 {{-- Linkerkolom: afbeelding --}}
                 <div class="reveal-left relative">
                     <div class="relative">
-                        <div class="aspect-[4/5] rounded-3xl overflow-hidden">
+                        <div class="aspect-[4/3] rounded-3xl overflow-hidden bg-[#0c2a1e]">
                             <img
-                                src="/images/over-ons.jpg"
-                                alt="N.O.A Trinity — mijn verhaal en passie voor cryolipolyse"
+                                src="/images/merk/noa-trinity-logo.jpg"
+                                alt="Logo van N.O.A. Trinity Bodyshaping: Freeze it. Shape it. Love it."
                                 class="w-full h-full object-cover"
                                 loading="lazy"
                             >
@@ -77,7 +77,11 @@
                     </p>
 
                     <p class="text-lg text-zwart/70 leading-relaxed mb-6">
-                        Om mijn klanten de beste zorg te bieden, heb ik mij laten certificeren door <strong class="text-zwart">Medcos</strong> voor de <strong class="text-zwart">Body Wizard</strong> — een toonaangevend apparaat voor professionele cryolipolyse. Ik heb uitgebreide trainingen gevolgd in zowel vetbevriezen als body sculpting, zodat ik je altijd veilig, deskundig en met het beste resultaat kan behandelen.
+                        Die gedachte zit ook in mijn motto: <strong class="text-zwart">Freeze it. Shape it. Love it.</strong> Plaatselijk vet aanpakken met cryolipolyse, je lichaam vormgeven met body sculpting — en je weer thuis voelen in je eigen lichaam.
+                    </p>
+
+                    <p class="text-lg text-zwart/70 leading-relaxed mb-6">
+                        Om mijn klanten de beste zorg te bieden, heb ik mij laten certificeren door <strong class="text-zwart">MedCos</strong> voor de <strong class="text-zwart">Body-Wizard Duo</strong>. Voor body sculpting met de <strong class="text-zwart">BodySculpting PRO</strong> en laserontharing met de <strong class="text-zwart">Diode ICE 4-Wave Master</strong> volgde ik de training van de Training Academy van Beauty & Bodyshaping. Zo kan ik je veilig en deskundig behandelen.
                     </p>
 
                     <p class="text-lg text-zwart/70 leading-relaxed">
@@ -113,9 +117,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                         </svg>
                     </div>
-                    <h3 class="font-serif text-xl font-bold mb-3">Medcos Body Wizard certificering</h3>
+                    <h3 class="font-serif text-xl font-bold mb-3">MedCos Body-Wizard certificering</h3>
                     <p class="text-zwart/60 leading-relaxed">
-                        Officieel gecertificeerd door Medcos voor het werken met de Body Wizard, het toonaangevende apparaat voor professionele cryolipolyse en vetbevriezen.
+                        Gecertificeerd door MedCos voor het werken met de Body-Wizard Duo, professionele apparatuur voor cryolipolyse en vetbevriezen.
                     </p>
                 </div>
 
@@ -139,9 +143,35 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
                         </svg>
                     </div>
-                    <h3 class="font-serif text-xl font-bold mb-3">Body sculpting specialisatie</h3>
+                    <h3 class="font-serif text-xl font-bold mb-3">Training BodySculpting PRO</h3>
                     <p class="text-zwart/60 leading-relaxed">
-                        Gespecialiseerde opleiding in niet-invasieve body sculpting technieken voor het vormgeven en verstevigen van het lichaam, met focus op blijvende resultaten.
+                        Training via de Training Academy van Beauty & Bodyshaping in het behandelen met de BodySculpting PRO, inclusief het vastleggen van voortgang met voor- en na-foto's.
+                    </p>
+                </div>
+
+                {{-- Kaart: Diode laser training --}}
+                <div class="reveal reveal-delay-1 bg-white rounded-2xl p-6 sm:p-8">
+                    <div class="w-14 h-14 bg-roze-light rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-roze-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Training Diode ICE Laser</h3>
+                    <p class="text-zwart/60 leading-relaxed">
+                        Training via de Training Academy van Beauty & Bodyshaping in laserontharing met de Diode ICE 4-Wave Master: huid- en haartypes, haargroei, contra-indicaties en veilig behandelen.
+                    </p>
+                </div>
+
+                {{-- Kaart: Hygiëne & veiligheid --}}
+                <div class="reveal reveal-delay-2 bg-white rounded-2xl p-6 sm:p-8">
+                    <div class="w-14 h-14 bg-roze-light rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-roze-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Hygiëne & veiligheid</h3>
+                    <p class="text-zwart/60 leading-relaxed">
+                        Werken volgens een vast protocol: een intake- en toestemmingsformulier vooraf, zorgvuldige hygiëne en duidelijke voor- en nazorgadviezen.
                     </p>
                 </div>
 
@@ -201,7 +231,7 @@
                     </div>
                     <h3 class="font-serif text-2xl font-bold mb-4">Professioneel</h3>
                     <p class="text-zwart/60 leading-relaxed">
-                        Ik werk uitsluitend met gecertificeerde apparatuur van Medcos en volg continu bijscholingen om op de hoogte te blijven van de nieuwste technieken. Veiligheid, hygi&euml;ne en kwaliteit staan altijd op de eerste plaats — daar doe ik geen concessies aan.
+                        Ik werk met professionele apparatuur — de Body-Wizard Duo van MedCos, de BodySculpting PRO-4 en de Diode ICE 4-Wave Master — en volg bijscholingen om op de hoogte te blijven van de nieuwste technieken. Veiligheid, hygi&euml;ne en kwaliteit staan altijd op de eerste plaats — daar doe ik geen concessies aan.
                     </p>
                 </div>
 
@@ -242,7 +272,7 @@
                     </p>
 
                     <p class="text-lg text-zwart/70 leading-relaxed mb-6">
-                        Hygi&euml;ne is voor mij vanzelfsprekend. Alle materialen worden zorgvuldig gereinigd en gedesinfecteerd tussen behandelingen. De apparatuur wordt regelmatig onderhouden en gecontroleerd volgens de richtlijnen van Medcos.
+                        Hygi&euml;ne is voor mij vanzelfsprekend. Alle materialen worden zorgvuldig gereinigd en gedesinfecteerd tussen behandelingen. De apparatuur wordt regelmatig onderhouden en gecontroleerd volgens de richtlijnen van de leveranciers.
                     </p>
 
                     <p class="text-lg text-zwart/70 leading-relaxed">
@@ -255,24 +285,24 @@
                     <div class="grid grid-cols-2 gap-4">
                         <div class="aspect-[3/4] rounded-2xl overflow-hidden">
                             <img
-                                src="/images/consult.jpg"
-                                alt="Persoonlijk consult bij N.O.A Trinity"
+                                src="/images/cryolipolyse/body-wizard-duo.jpg"
+                                alt="De Body-Wizard Duo voor cryolipolyse"
                                 class="w-full h-full object-cover"
                                 loading="lazy"
                             >
                         </div>
                         <div class="aspect-[3/4] rounded-2xl overflow-hidden mt-8">
                             <img
-                                src="/images/behandeling.jpg"
-                                alt="Professionele behandelruimte N.O.A Trinity"
+                                src="/images/laser/laser-apparaat-scherm.jpg"
+                                alt="Het scherm van de Diode ICE 4-Wave Master laser"
                                 class="w-full h-full object-cover"
                                 loading="lazy"
                             >
                         </div>
                         <div class="col-span-2 aspect-[16/9] rounded-2xl overflow-hidden">
                             <img
-                                src="/images/over-ons.jpg"
-                                alt="Werkruimte en sfeer bij N.O.A Trinity"
+                                src="/images/laser/laser-sfeer-benen.jpg"
+                                alt="Ontspannen behandeling in een rustige, verzorgde omgeving"
                                 class="w-full h-full object-cover"
                                 loading="lazy"
                             >
@@ -302,7 +332,7 @@
                 <a href="{{ route('contact') }}" class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                     Maak een afspraak
                 </a>
-                <a href="{{ route('cryolipolyse') }}" class="inline-flex items-center justify-center border border-zwart/15 text-zwart px-8 py-4 rounded-full text-sm font-semibold hover:border-zwart/30 hover:text-roze-dark transition-colors">
+                <a href="{{ route('home') }}#diensten" class="inline-flex items-center justify-center border border-zwart/15 text-zwart px-8 py-4 rounded-full text-sm font-semibold hover:border-zwart/30 hover:text-roze-dark transition-colors">
                     Bekijk behandelingen
                 </a>
             </div>

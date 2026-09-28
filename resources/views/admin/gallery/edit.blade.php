@@ -62,6 +62,7 @@
                             class="w-full px-5 py-3.5 rounded-xl border border-zwart/10 bg-creme/50 text-zwart focus:outline-none focus:border-roze-dark focus:ring-1 focus:ring-roze-dark transition-colors text-sm">
                         <option value="cryolipolyse" {{ old('treatment_type', $item->treatment_type) === 'cryolipolyse' ? 'selected' : '' }}>Cryolipolyse</option>
                         <option value="body-sculpting" {{ old('treatment_type', $item->treatment_type) === 'body-sculpting' ? 'selected' : '' }}>Body Sculpting</option>
+                        <option value="laserontharen" {{ old('treatment_type', $item->treatment_type) === 'laserontharen' ? 'selected' : '' }}>Laserontharen</option>
                         <option value="combinatie" {{ old('treatment_type', $item->treatment_type) === 'combinatie' ? 'selected' : '' }}>Combinatie</option>
                     </select>
                     @error('treatment_type') <p class="text-red-500 text-xs mt-1.5">{{ $message }}</p> @enderror

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Cryolipolyse & Body Sculpting | N.O.A Trinity')
-@section('meta_description', 'Professionele cryolipolyse en body sculpting bij N.O.A Trinity. Niet-invasieve lichaamsvormgeving met de gecertificeerde Body Wizard van Medcos.')
+@section('title', 'Cryolipolyse, Body Sculpting & Laserontharen | N.O.A Trinity')
+@section('meta_description', 'N.O.A Trinity Body Shaping in Leeuwarden: cryolipolyse met de Body-Wizard Duo, body sculpting en diode laserontharing. Persoonlijke begeleiding naar jouw lichaamsdoelen.')
 
 @section('content')
 
@@ -26,7 +26,7 @@
                 {{-- Linkerkolom: tekst --}}
                 <div class="reveal">
                     <p class="text-roze-dark text-sm tracking-[0.3em] uppercase mb-6 font-semibold">
-                        Cryolipolyse & Body Sculpting
+                        Freeze it. Shape it. Love it.
                     </p>
                     <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 sm:mb-8">
                         Jouw lichaam,
@@ -34,7 +34,7 @@
                         technologie
                     </h1>
                     <p class="text-base sm:text-lg md:text-xl text-zwart/70 leading-relaxed max-w-xl mb-8 sm:mb-10">
-                        Ontdek cryolipolyse en body sculpting bij N.O.A Trinity. Wij verwijderen hardnekkig vet zonder operatie met de Body Wizard van Medcos — veilig, niet-invasief en met zichtbaar resultaat.
+                        Cryolipolyse, body sculpting en diode laserontharing bij N.O.A Trinity Body Shaping in Leeuwarden. Niet-invasieve behandelingen met professionele apparatuur, persoonlijke aandacht en een behandelplan dat bij jou past.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 mb-8">
                         <a href="{{ route('contact') }}" class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
@@ -70,8 +70,8 @@
                         {{-- Hoofd foto --}}
                         <div class="relative aspect-[3/4] rounded-[50%_50%_45%_55%/45%_55%_50%_50%] overflow-hidden shadow-lg">
                             <img
-                                src="/assets/hero1.jpg"
-                                alt="Cryolipolyse behandeling met Body Wizard bij N.O.A Trinity"
+                                src="/images/laser/laser-oksel-behandeling.jpg"
+                                alt="Ontspannen behandeling bij N.O.A Trinity Body Shaping"
                                 class="w-full h-full object-cover"
                                 loading="eager"
                             >
@@ -80,8 +80,8 @@
                         {{-- Kleine foto-blob --}}
                         <div class="absolute -bottom-4 -left-6 w-24 h-24 rounded-[45%_55%_40%_60%/55%_40%_60%_45%] overflow-hidden shadow-md">
                             <img
-                                src="/assets/hero2.jpg"
-                                alt="Body sculpting lichaamsvormgeving N.O.A Trinity"
+                                src="/images/cryolipolyse/cryo-applicator.jpg"
+                                alt="Cryolipolyse applicator van de Body-Wizard Duo"
                                 class="w-full h-full object-cover"
                                 loading="lazy"
                             >
@@ -124,8 +124,8 @@
 
                         <div class="relative w-full h-full rounded-[60%_40%_55%_45%/45%_55%_45%_55%] overflow-hidden shadow-lg">
                             <img
-                                src="/assets/hero1.jpg"
-                                alt="Cryolipolyse behandeling met Body Wizard bij N.O.A Trinity"
+                                src="/images/laser/laser-oksel-behandeling.jpg"
+                                alt="Ontspannen behandeling bij N.O.A Trinity Body Shaping"
                                 class="w-full h-full object-cover"
                                 loading="eager"
                             >
@@ -136,8 +136,8 @@
 
                         <div class="absolute -bottom-8 -left-16 w-40 h-40 rounded-[45%_55%_40%_60%/55%_40%_60%_45%] overflow-hidden shadow-md animate-float-reverse">
                             <img
-                                src="/assets/hero2.jpg"
-                                alt="Body sculpting lichaamsvormgeving N.O.A Trinity"
+                                src="/images/cryolipolyse/cryo-applicator.jpg"
+                                alt="Cryolipolyse applicator van de Body-Wizard Duo"
                                 class="w-full h-full object-cover"
                                 loading="lazy"
                             >
@@ -181,21 +181,24 @@
                 <div class="reveal-right order-1 lg:order-2">
                     <p class="text-roze-dark text-sm tracking-[0.3em] uppercase mb-4 font-semibold">Over mij</p>
                     <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
-                        Specialist in<br>niet-invasieve lichaamsvormgeving
+                        Persoonlijke begeleiding naar jouw lichaamsdoelen
                     </h2>
                     <div class="w-16 h-0.5 bg-roze mb-8"></div>
                     <p class="text-lg text-zwart/70 leading-relaxed mb-6">
-                        Bij N.O.A Trinity geloof ik dat iedereen zich goed mag voelen in het eigen lichaam. Ik combineer vakmanschap met geavanceerde cryolipolyse-technologie om jou te helpen hardnekkig vet te verminderen — zonder operatie, zonder naalden en zonder hersteltijd.
+                        Bij N.O.A Trinity help ik mensen die hun lichaam graag verder in vorm willen brengen en zich prettiger willen voelen in hun eigen lichaam. Mijn specialisatie ligt bij niet-invasieve lichaamsbehandelingen, waarbij persoonlijke aandacht, veiligheid en realistische doelen centraal staan.
+                    </p>
+                    <p class="text-lg text-zwart/70 leading-relaxed mb-6">
+                        Dankzij mijn ruime ervaring en de mooie resultaten die ik met mijn klanten heb bereikt, kan ik iedere behandeling persoonlijk afstemmen op jouw lichaam, wensen en doelen. Geen standaard aanpak, maar een behandelplan dat echt bij jou past.
                     </p>
                     <p class="text-lg text-zwart/70 leading-relaxed mb-8">
-                        Ik werk uitsluitend met de <strong class="text-zwart">Body Wizard van Medcos</strong>, een gecertificeerd en toonaangevend apparaat voor vetbevriezen. In combinatie met professionele body sculpting behandelingen bied ik een persoonlijke aanpak met zichtbaar en blijvend resultaat.
+                        Daarbij werk ik met professionele apparatuur en combineer ik ervaring met persoonlijke begeleiding. Mijn doel is om samen met jou te werken aan zichtbare, natuurlijke resultaten die passen bij jouw lichaam.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="{{ route('contact') }}" class="inline-flex items-center justify-center bg-zwart text-creme px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                             Maak een afspraak
                         </a>
-                        <a href="{{ route('cryolipolyse') }}" class="inline-flex items-center gap-2 text-sm font-semibold text-roze-dark hover:text-zwart transition-colors py-3.5">
-                            Bekijk behandelingen
+                        <a href="{{ route('over-mij') }}" class="inline-flex items-center gap-2 text-sm font-semibold text-roze-dark hover:text-zwart transition-colors py-3.5">
+                            Meer over mij
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                             </svg>
@@ -214,28 +217,28 @@
         <div class="max-w-[1400px] mx-auto px-6 lg:px-8">
             {{-- Sectie header — links uitgelijnd --}}
             <div class="reveal max-w-2xl mb-10 sm:mb-16">
-                <p class="text-roze-dark text-sm tracking-[0.3em] uppercase mb-4 font-semibold">Behandelingen</p>
-                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Cryolipolyse & Body Sculpting</h2>
+                <p class="text-roze-dark text-sm tracking-[0.3em] uppercase mb-4 font-semibold">Wat ik voor je kan doen</p>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Behandelingen</h2>
                 <p class="text-zwart/60 text-lg leading-relaxed">
-                    Twee bewezen, niet-invasieve behandelingen gericht op het verminderen van hardnekkig vet en het vormgeven van jouw lichaam — zonder operatie.
+                    Drie niet-invasieve behandelingen, elk persoonlijk afgestemd op jouw lichaam, wensen en doelen — zonder operatie.
                 </p>
             </div>
 
             {{-- Diensten grid --}}
-            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 {{-- Kaart: Cryolipolyse --}}
-                <div class="reveal reveal-delay-1 group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+                <div class="reveal reveal-delay-1 group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col">
                     <div class="h-64 overflow-hidden">
-                        <img src="/images/cryo.jpg" alt="Cryolipolyse vetbevriezen behandeling met Body Wizard van Medcos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="/images/cryolipolyse/body-wizard-behandeling.jpg" alt="Cryolipolyse met de Body-Wizard Duo van MedCos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     </div>
-                    <div class="p-8">
-                        <p class="text-roze-dark text-xs tracking-[0.2em] uppercase mb-2 font-semibold">Body Wizard — Medcos</p>
+                    <div class="p-8 flex flex-col flex-1">
+                        <p class="text-roze-dark text-xs tracking-[0.2em] uppercase mb-2 font-semibold">Body-Wizard Duo — MedCos</p>
                         <h3 class="font-serif text-2xl font-bold mb-4">Cryolipolyse (vetbevriezen)</h3>
                         <p class="text-zwart/70 leading-relaxed mb-6">
-                            Cryolipolyse, ook wel vetbevriezen genoemd, is een klinisch bewezen methode om hardnekkige vetophopingen te verminderen. Met de gecertificeerde Body Wizard van Medcos koelen wij vetcellen gecontroleerd af, waarna je lichaam ze op natuurlijke wijze afbreekt. Geen operatie, geen naalden, geen hersteltijd.
+                            Plaatselijke vetophopingen worden gecontroleerd gekoeld, waarna je lichaam de vetcellen geleidelijk op natuurlijke wijze afvoert. Gericht werken aan je lichaamscontouren: geen operatie, geen naalden en geen hersteltijd.
                         </p>
-                        <a href="{{ route('cryolipolyse') }}" class="inline-flex items-center gap-2 text-sm font-semibold text-zwart group-hover:text-roze-dark transition-colors">
+                        <a href="{{ route('cryolipolyse') }}" class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-zwart group-hover:text-roze-dark transition-colors">
                             Meer informatie
                             <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -245,17 +248,38 @@
                 </div>
 
                 {{-- Kaart: Body Sculpting --}}
-                <div class="reveal reveal-delay-2 group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+                <div class="reveal reveal-delay-2 group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col">
                     <div class="h-64 overflow-hidden">
-                        <img src="/images/sculpting.jpg" alt="Body sculpting lichaamsvormgeving behandeling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="/images/bodysculpting/bodysculpting-pro-4.jpg" alt="Body sculpting met de BodySculpting PRO-4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     </div>
-                    <div class="p-8">
-                        <p class="text-roze-dark text-xs tracking-[0.2em] uppercase mb-2 font-semibold">Lichaamsvormgeving</p>
+                    <div class="p-8 flex flex-col flex-1">
+                        <p class="text-roze-dark text-xs tracking-[0.2em] uppercase mb-2 font-semibold">BodySculpting PRO-4</p>
                         <h3 class="font-serif text-2xl font-bold mb-4">Body Sculpting</h3>
                         <p class="text-zwart/70 leading-relaxed mb-6">
-                            Met body sculpting werk ik gericht aan de contouren van je lichaam. Deze niet-invasieve behandeling vermindert omvang, verstevigt de huid en creëert een strakker silhouet. Ideaal als zelfstandige behandeling of in combinatie met cryolipolyse voor optimaal resultaat.
+                            Gericht werken aan spieren en contouren van onder andere buik, billen en benen. Een niet-invasieve behandeling die mooi aansluit op een actieve, gezonde leefstijl — zelfstandig of in combinatie met cryolipolyse.
                         </p>
-                        <a href="{{ route('body-sculpting') }}" class="inline-flex items-center gap-2 text-sm font-semibold text-zwart group-hover:text-roze-dark transition-colors">
+                        <a href="{{ route('body-sculpting') }}" class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-zwart group-hover:text-roze-dark transition-colors">
+                            Meer informatie
+                            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                {{-- Kaart: Diode Laser --}}
+                <div class="reveal reveal-delay-3 group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col md:col-span-2 lg:col-span-1">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="/images/laser/laser-benen-handstuk.jpg" alt="Diode laserontharing van de benen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <span class="absolute top-4 left-4 bg-white/90 text-roze-dark text-xs font-semibold tracking-[0.15em] uppercase px-3 py-1 rounded-full">Nieuw</span>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <p class="text-roze-dark text-xs tracking-[0.2em] uppercase mb-2 font-semibold">Diode ICE 4-Wave Master</p>
+                        <h3 class="font-serif text-2xl font-bold mb-4">Diode Laser – Laserontharing</h3>
+                        <p class="text-zwart/70 leading-relaxed mb-6">
+                            Effectieve en comfortabele laserontharing voor een langdurig gladde huid. De behandeling wordt persoonlijk afgestemd op jouw huid, haartype en behandelzone.
+                        </p>
+                        <a href="{{ route('laserontharen') }}" class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-zwart group-hover:text-roze-dark transition-colors">
                             Meer informatie
                             <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -288,7 +312,7 @@
                     <h2 class="font-serif text-4xl font-bold mb-4">Waarom N.O.A Trinity</h2>
                     <div class="w-16 h-0.5 bg-roze mb-6"></div>
                     <p class="text-zwart/60 leading-relaxed">
-                        Gecertificeerde apparatuur, een persoonlijke aanpak en niet-invasieve behandelingen met bewezen resultaten. Dat is waar N.O.A Trinity voor staat.
+                        Professionele apparatuur, een persoonlijke aanpak en eerlijk advies over wat haalbaar is. Dat is waar N.O.A Trinity voor staat.
                     </p>
                 </div>
 
@@ -303,9 +327,9 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-serif text-lg font-bold mb-2">Gecertificeerde Body Wizard</h3>
+                            <h3 class="font-serif text-lg font-bold mb-2">Professionele apparatuur</h3>
                             <p class="text-sm text-zwart/60 leading-relaxed">
-                                Ik werk uitsluitend met de Body Wizard van Medcos — gecertificeerde en klinisch geteste apparatuur voor professionele cryolipolyse.
+                                De Body-Wizard Duo van MedCos voor cryolipolyse, de BodySculpting PRO-4 en de Diode ICE 4-Wave Master voor laserontharing.
                             </p>
                         </div>
                     </div>
@@ -318,9 +342,9 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-serif text-lg font-bold mb-2">Niet-invasieve behandeling</h3>
+                            <h3 class="font-serif text-lg font-bold mb-2">Niet-invasieve behandelingen</h3>
                             <p class="text-sm text-zwart/60 leading-relaxed">
-                                Vetverwijdering zonder operatie, zonder naalden en zonder hersteltijd. Je kunt direct terug naar je dagelijks leven.
+                                Geen operatie en geen naalden. Na de behandeling kun je in de regel direct weer verder met je dagelijkse bezigheden.
                             </p>
                         </div>
                     </div>
@@ -335,7 +359,7 @@
                         <div>
                             <h3 class="font-serif text-lg font-bold mb-2">Persoonlijk behandelplan</h3>
                             <p class="text-sm text-zwart/60 leading-relaxed">
-                                Elke cryolipolyse of body sculpting behandeling wordt op maat samengesteld op basis van jouw lichaam en doelen.
+                                Iedere behandeling begint met een persoonlijke intake. Zo stem ik het behandelplan af op jouw lichaam, wensen en doelen.
                             </p>
                         </div>
                     </div>
@@ -348,9 +372,9 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-serif text-lg font-bold mb-2">Zichtbaar resultaat</h3>
+                            <h3 class="font-serif text-lg font-bold mb-2">Realistische doelen</h3>
                             <p class="text-sm text-zwart/60 leading-relaxed">
-                                Al na enkele behandelingen zichtbaar minder vet. Vetbevriezen geeft een natuurlijk en blijvend resultaat.
+                                Eerlijk advies en haalbare verwachtingen. Resultaten verschillen per persoon; tijdens de intake bespreken we wat je kunt verwachten.
                             </p>
                         </div>
                     </div>
@@ -375,7 +399,7 @@
             {{-- Header links --}}
             <div class="reveal max-w-2xl mb-10 sm:mb-16">
                 <p class="text-roze-dark text-sm tracking-[0.3em] uppercase mb-4 font-semibold">Het proces</p>
-                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold">Hoe werkt cryolipolyse?</h2>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold">Hoe verloopt een traject?</h2>
             </div>
 
             {{-- Stappen — horizontaal met nummers links --}}
@@ -384,7 +408,7 @@
                 {{-- Stap 1 --}}
                 <div class="reveal reveal-delay-1 group bg-white rounded-2xl overflow-hidden shadow-sm">
                     <div class="h-48 overflow-hidden">
-                        <img src="/images/consult.jpg" alt="Gratis consult cryolipolyse bij N.O.A Trinity" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="/images/laser/laser-apparaat-scherm.jpg" alt="Persoonlijke uitleg tijdens de intake bij N.O.A Trinity" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     </div>
                     <div class="relative p-8">
                         <span class="font-serif text-6xl font-bold text-roze/30 absolute top-4 right-6">01</span>
@@ -394,9 +418,9 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
                                 </svg>
                             </div>
-                            <h3 class="font-serif text-xl font-bold mb-3">Gratis kennismaking</h3>
+                            <h3 class="font-serif text-xl font-bold mb-3">Persoonlijke intake</h3>
                             <p class="text-zwart/60 leading-relaxed">
-                                Tijdens een vrijblijvend consult bespreken we jouw wensen en beoordelen we welke behandeling — cryolipolyse, body sculpting of een combinatie — het beste bij je past.
+                                Tijdens een vrijblijvend consult bespreken we jouw wensen, beoordelen we of een behandeling geschikt voor je is en welke aanpak — cryolipolyse, body sculpting, laserontharing of een combinatie — het beste past.
                             </p>
                         </div>
                     </div>
@@ -405,7 +429,7 @@
                 {{-- Stap 2 --}}
                 <div class="reveal reveal-delay-2 group bg-white rounded-2xl overflow-hidden shadow-sm">
                     <div class="h-48 overflow-hidden">
-                        <img src="/images/behandeling.jpg" alt="Cryolipolyse behandeling met Body Wizard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="/images/cryolipolyse/cryo-applicator.jpg" alt="Behandeling op maat met de Body-Wizard Duo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     </div>
                     <div class="relative p-8">
                         <span class="font-serif text-6xl font-bold text-roze/30 absolute top-4 right-6">02</span>
@@ -417,7 +441,7 @@
                             </div>
                             <h3 class="font-serif text-xl font-bold mb-3">Behandeling op maat</h3>
                             <p class="text-zwart/60 leading-relaxed">
-                                De Body Wizard van Medcos koelt de behandelzone gecontroleerd af. De vetcellen worden bevroren terwijl jij ontspant — pijnloos en comfortabel.
+                                Iedere behandeling wordt afgestemd op jouw lichaam, huid en behandelzone. Tijdens de behandeling kun je ontspannen; ik begeleid je van begin tot eind.
                             </p>
                         </div>
                     </div>
@@ -426,7 +450,7 @@
                 {{-- Stap 3 --}}
                 <div class="reveal reveal-delay-3 group bg-white rounded-2xl overflow-hidden shadow-sm">
                     <div class="h-48 overflow-hidden">
-                        <img src="/images/resultaat.jpg" alt="Zichtbaar resultaat na vetbevriezen behandeling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="/images/laser/laser-sfeer-veer.jpg" alt="Gladde huid na de behandeling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     </div>
                     <div class="relative p-8">
                         <span class="font-serif text-6xl font-bold text-roze/30 absolute top-4 right-6">03</span>
@@ -436,9 +460,9 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
                                 </svg>
                             </div>
-                            <h3 class="font-serif text-xl font-bold mb-3">Blijvend resultaat</h3>
+                            <h3 class="font-serif text-xl font-bold mb-3">Nazorg & resultaat</h3>
                             <p class="text-zwart/60 leading-relaxed">
-                                In de weken na de behandeling breekt je lichaam de bevroren vetcellen op natuurlijke wijze af. Het resultaat is zichtbaar, meetbaar en blijvend.
+                                Je krijgt duidelijke nazorgadviezen mee. Het resultaat ontstaat geleidelijk en verschilt per persoon; samen evalueren we en stemmen we vervolgafspraken op jou af.
                             </p>
                         </div>
                     </div>
@@ -464,7 +488,7 @@
             <div class="reveal-right flex justify-center mb-16">
                 <div class="max-w-md text-center">
                     <p class="text-roze-dark text-sm tracking-[0.3em] uppercase mb-4 font-semibold">Klantervaringen</p>
-                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold">Resultaten van cryolipolyse</h2>
+                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold">Wat klanten zeggen</h2>
                 </div>
             </div>
         </div>
@@ -661,14 +685,14 @@
             {{-- Instagram post kaarten — 4 per rij, 2 rijen --}}
             @php
             $posts = [
-                ['img' => '/images/cryo.jpg', 'likes' => '124', 'caption' => 'Weer een prachtig resultaat na 2 sessies cryolipolyse! Zo trots op deze transformatie.', 'date' => '2 d'],
-                ['img' => '/images/sculpting.jpg', 'likes' => '98', 'caption' => 'Body sculpting in actie. Niet-invasief, geen hersteltijd en direct terug naar je dagelijks leven.', 'date' => '4 d'],
-                ['img' => '/images/consult.jpg', 'likes' => '87', 'caption' => 'Gratis kennismakingsgesprek gehad vandaag! Altijd leuk om nieuwe doelen te bespreken.', 'date' => '1 w'],
-                ['img' => '/images/behandeling.jpg', 'likes' => '156', 'caption' => 'De Body Wizard van Medcos doet zijn werk. Cryolipolyse op zijn best!', 'date' => '1 w'],
-                ['img' => '/images/resultaat.jpg', 'likes' => '203', 'caption' => 'Voor & na: 3 behandelingen verder en het resultaat spreekt voor zich.', 'date' => '2 w'],
-                ['img' => '/images/over-ons.jpg', 'likes' => '112', 'caption' => 'Behind the scenes bij N.O.A Trinity. Met liefde en passie voor het vak.', 'date' => '2 w'],
-                ['img' => '/assets/hero1.jpg', 'likes' => '145', 'caption' => 'Zelfvertrouwen begint bij hoe je je voelt. Wij helpen je op weg.', 'date' => '3 w'],
-                ['img' => '/assets/hero2.jpg', 'likes' => '91', 'caption' => 'Nieuwe week, nieuwe behandelingen. Boek jouw gratis consult via de link in bio!', 'date' => '3 w'],
+                ['img' => '/images/laser/laser-oksel-behandeling.jpg', 'likes' => '124', 'caption' => 'Nieuw in Leeuwarden: permanent laserontharen met de Diode ICE 4-Wave Master. Gladde huid, minder ongewenste haargroei, meer vrijheid.', 'date' => '2 d'],
+                ['img' => '/images/bodysculpting/bodysculpting-pro-4.jpg', 'likes' => '98', 'caption' => 'Maak kennis met de BodySculpting PRO-4: gericht werken aan buik, billen en benen.', 'date' => '4 d'],
+                ['img' => '/images/cryolipolyse/body-wizard-duo.jpg', 'likes' => '87', 'caption' => 'De Body-Wizard Duo van MedCos staat klaar. Cryolipolyse voor plaatselijke vetophopingen, zonder naalden of operatie.', 'date' => '1 w'],
+                ['img' => '/images/laser/laser-golflengten-scherm.jpg', 'likes' => '156', 'caption' => 'Vier golflengtes in één laser: 755, 808, 940 en 1064 nm. Zo stem ik iedere behandeling af op jouw huid- en haartype.', 'date' => '1 w'],
+                ['img' => '/images/laser/laser-sfeer-veer.jpg', 'likes' => '203', 'caption' => 'Zijdezacht, een blijvend verschil.', 'date' => '2 w'],
+                ['img' => '/images/cryolipolyse/cryo-applicator.jpg', 'likes' => '112', 'caption' => 'Vetbevriezen in actie. Tijdens de behandeling lekker ontspannen.', 'date' => '2 w'],
+                ['img' => '/images/laser/laser-benen-apparaat.jpg', 'likes' => '145', 'caption' => 'Gladde benen zonder dagelijks scheren? Plan jouw intake en ontdek of laserontharen bij je past.', 'date' => '3 w'],
+                ['img' => '/images/cryolipolyse/body-wizard-behandeling.jpg', 'likes' => '91', 'caption' => 'Freeze it. Shape it. Love it. Boek jouw gratis consult via de link in bio!', 'date' => '3 w'],
             ];
             @endphp
 
@@ -736,10 +760,10 @@
 
         <div class="reveal-scale relative z-10 max-w-3xl mx-auto px-6 lg:px-8 text-center">
             <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-zwart mb-6">
-                Klaar om hardnekkig vet te verliezen?
+                Klaar om de eerste stap te zetten?
             </h2>
             <p class="text-base sm:text-lg text-zwart/70 leading-relaxed mb-8 sm:mb-10 max-w-xl mx-auto">
-                Boek een gratis en vrijblijvend consult voor cryolipolyse of body sculpting. Samen bespreken we jouw doelen en stellen we een persoonlijk behandelplan op.
+                Boek een gratis en vrijblijvend consult voor cryolipolyse, body sculpting of laserontharen. Samen bespreken we jouw doelen en stellen we een persoonlijk behandelplan op.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="tel:{{ $settings->telefoon_link }}" class="inline-flex items-center justify-center gap-2 bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">

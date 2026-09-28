@@ -28,7 +28,7 @@ class GalleryController extends Controller
             'description' => ['nullable', 'string'],
             'before_image' => ['required', 'image', 'max:5120'],
             'after_image' => ['required', 'image', 'max:5120'],
-            'treatment_type' => ['required', 'in:cryolipolyse,body-sculpting,combinatie'],
+            'treatment_type' => ['required', 'in:cryolipolyse,body-sculpting,laserontharen,combinatie'],
             'is_published' => ['nullable', 'boolean'],
             'sort_order' => ['nullable', 'integer', 'min:0'],
         ]);
@@ -59,7 +59,7 @@ class GalleryController extends Controller
             'description' => ['nullable', 'string'],
             'before_image' => ['nullable', 'image', 'max:5120'],
             'after_image' => ['nullable', 'image', 'max:5120'],
-            'treatment_type' => ['required', 'in:cryolipolyse,body-sculpting,combinatie'],
+            'treatment_type' => ['required', 'in:cryolipolyse,body-sculpting,laserontharen,combinatie'],
             'is_published' => ['nullable', 'boolean'],
             'sort_order' => ['nullable', 'integer', 'min:0'],
         ]);

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Contact | N.O.A Trinity — Cryolipolyse & Body Sculpting')
-@section('meta_description', 'Neem contact op met N.O.A Trinity voor vragen over cryolipolyse, body sculpting of om een gratis consult in te plannen. Wij helpen je graag verder.')
+@section('title', 'Contact | N.O.A Trinity — Cryolipolyse, Body Sculpting & Laserontharen')
+@section('meta_description', 'Neem contact op met N.O.A Trinity voor vragen over cryolipolyse, body sculpting, laserontharen of om een gratis consult in te plannen. Wij helpen je graag verder.')
 
 @section('content')
 
@@ -29,7 +29,7 @@
                 <span class="text-roze-dark">met ons op</span>
             </h1>
             <p class="reveal text-base sm:text-lg md:text-xl text-zwart/70 leading-relaxed max-w-2xl mx-auto">
-                Heb je vragen over cryolipolyse of body sculpting, of wil je een gratis consult inplannen? Wij helpen je graag verder.
+                Heb je vragen over cryolipolyse, body sculpting of laserontharen, of wil je een gratis consult inplannen? Wij helpen je graag verder.
             </p>
         </div>
     </section>
@@ -109,12 +109,14 @@
                                     class="w-full px-5 py-3.5 rounded-xl border border-zwart/10 bg-creme/50 text-zwart placeholder:text-zwart/40 focus:outline-none focus:border-roze-dark focus:ring-1 focus:ring-roze-dark transition-colors text-sm appearance-none"
                                     style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%230A0908' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E&quot;); background-repeat: no-repeat; background-position: right 1.25rem center; background-size: 1rem;"
                                 >
+                                    @php($gekozenBehandeling = old('behandeling', request('behandeling')))
                                     <option value="">Selecteer een behandeling</option>
-                                    <option value="cryolipolyse" {{ old('behandeling') === 'cryolipolyse' ? 'selected' : '' }}>Cryolipolyse</option>
-                                    <option value="body-sculpting" {{ old('behandeling') === 'body-sculpting' ? 'selected' : '' }}>Body Sculpting</option>
-                                    <option value="combinatie" {{ old('behandeling') === 'combinatie' ? 'selected' : '' }}>Combinatie behandeling</option>
-                                    <option value="gratis-consult" {{ old('behandeling') === 'gratis-consult' ? 'selected' : '' }}>Gratis consult</option>
-                                    <option value="anders" {{ old('behandeling') === 'anders' ? 'selected' : '' }}>Anders</option>
+                                    <option value="cryolipolyse" {{ $gekozenBehandeling === 'cryolipolyse' ? 'selected' : '' }}>Cryolipolyse</option>
+                                    <option value="body-sculpting" {{ $gekozenBehandeling === 'body-sculpting' ? 'selected' : '' }}>Body Sculpting</option>
+                                    <option value="laserontharen" {{ $gekozenBehandeling === 'laserontharen' ? 'selected' : '' }}>Diode Laser – Laserontharen</option>
+                                    <option value="combinatie" {{ $gekozenBehandeling === 'combinatie' ? 'selected' : '' }}>Combinatie behandeling</option>
+                                    <option value="gratis-consult" {{ $gekozenBehandeling === 'gratis-consult' ? 'selected' : '' }}>Gratis consult</option>
+                                    <option value="anders" {{ $gekozenBehandeling === 'anders' ? 'selected' : '' }}>Anders</option>
                                 </select>
                                 @error('behandeling') <p class="text-red-500 text-xs mt-1">{{ $message }}</p> @enderror
                             </div>
@@ -329,14 +331,17 @@
                 Ontdek onze behandelingen
             </h2>
             <p class="text-base sm:text-lg text-zwart/70 leading-relaxed mb-8 sm:mb-10 max-w-xl mx-auto">
-                Benieuwd naar wat cryolipolyse of body sculpting voor jou kan doen? Bekijk onze behandelingen en ontdek hoe we hardnekkig vet verminderen — zonder operatie.
+                Benieuwd wat cryolipolyse, body sculpting of laserontharen voor jou kan doen? Bekijk de behandelingen en ontdek wat bij jouw doelen past.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <div class="flex flex-col sm:flex-row flex-wrap gap-4 justify-center">
                 <a href="{{ route('cryolipolyse') }}" class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                     Cryolipolyse bekijken
                 </a>
                 <a href="{{ route('body-sculpting') }}" class="inline-flex items-center justify-center border border-zwart/15 text-zwart px-8 py-4 rounded-full text-sm font-semibold hover:border-zwart/30 hover:text-roze-dark transition-colors">
                     Body Sculpting bekijken
+                </a>
+                <a href="{{ route('laserontharen') }}" class="inline-flex items-center justify-center border border-zwart/15 text-zwart px-8 py-4 rounded-full text-sm font-semibold hover:border-zwart/30 hover:text-roze-dark transition-colors">
+                    Laserontharen bekijken
                 </a>
             </div>
         </div>

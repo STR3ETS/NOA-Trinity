@@ -11,7 +11,7 @@ class GalleryController extends Controller
     {
         $query = GalleryItem::published()->ordered();
 
-        if ($request->has('type') && in_array($request->type, ['cryolipolyse', 'body-sculpting', 'combinatie'])) {
+        if ($request->has('type') && in_array($request->type, ['cryolipolyse', 'body-sculpting', 'laserontharen', 'combinatie'])) {
             $query->where('treatment_type', $request->type);
         }
 

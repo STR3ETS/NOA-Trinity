@@ -10,10 +10,10 @@ class SiteSettingsSeeder extends Seeder
     public function run(): void
     {
         SiteSetting::firstOrCreate([], [
-            'telefoon' => '+31 6 00 00 00 00',
+            'telefoon' => '06 19 01 36 50',
             'email' => 'info@noatrinity.nl',
-            'adres' => 'Adres komt hier',
-            'postcode_stad' => 'Stad, Postcode',
+            'adres' => 'Voorstreek 15',
+            'postcode_stad' => '8911 JH Leeuwarden',
             'openingstijden_ma_vr' => '09:00 - 18:00',
             'openingstijden_za' => '10:00 - 16:00',
             'openingstijden_zo' => 'Gesloten',

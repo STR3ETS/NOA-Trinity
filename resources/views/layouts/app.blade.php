@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title', 'Cryolipolyse & Body Sculpting | N.O.A Trinity')</title>
-    <meta name="description" content="@yield('meta_description', 'Professionele cryolipolyse en body sculpting bij N.O.A Trinity. Niet-invasieve lichaamsvormgeving met de gecertificeerde Body Wizard van Medcos.')">
-    <meta name="keywords" content="@yield('meta_keywords', 'cryolipolyse, vetbevriezen, body sculpting, lichaamsvormgeving, Body Wizard, Medcos, niet-invasief, vetverwijdering')">
+    <title>@yield('title', 'Cryolipolyse, Body Sculpting & Laserontharen | N.O.A Trinity')</title>
+    <meta name="description" content="@yield('meta_description', 'N.O.A Trinity Body Shaping in Leeuwarden: cryolipolyse met de Body-Wizard Duo, body sculpting en diode laserontharing. Persoonlijke begeleiding en een behandelplan op maat.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'cryolipolyse, vetbevriezen, body sculpting, laserontharen, diode laser, lichaamsvormgeving, Body-Wizard Duo, MedCos, Leeuwarden')">
     <meta name="robots" content="@yield('robots', 'index, follow')">
     <link rel="canonical" href="{{ url()->current() }}">
 
@@ -13,19 +13,19 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
 
     {{-- Open Graph --}}
-    <meta property="og:title" content="@yield('og_title', 'Cryolipolyse & Body Sculpting | N.O.A Trinity')">
-    <meta property="og:description" content="@yield('og_description', 'Professionele cryolipolyse en body sculpting bij N.O.A Trinity. Niet-invasieve lichaamsvormgeving met de Body Wizard van Medcos.')">
+    <meta property="og:title" content="@yield('og_title', 'Cryolipolyse, Body Sculpting & Laserontharen | N.O.A Trinity')">
+    <meta property="og:description" content="@yield('og_description', 'Cryolipolyse, body sculpting en diode laserontharing bij N.O.A Trinity Body Shaping. Freeze it. Shape it. Love it.')">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:image" content="{{ asset('images/hero-main.jpg') }}">
+    <meta property="og:image" content="@yield('og_image', asset('images/merk/noa-trinity-logo.jpg'))">
     <meta property="og:locale" content="nl_NL">
     <meta property="og:site_name" content="N.O.A Trinity">
 
     {{-- Twitter Card --}}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('og_title', 'Cryolipolyse & Body Sculpting | N.O.A Trinity')">
-    <meta name="twitter:description" content="@yield('og_description', 'Professionele cryolipolyse en body sculpting bij N.O.A Trinity. Niet-invasieve lichaamsvormgeving met de Body Wizard van Medcos.')">
-    <meta name="twitter:image" content="{{ asset('images/hero-main.jpg') }}">
+    <meta name="twitter:title" content="@yield('og_title', 'Cryolipolyse, Body Sculpting & Laserontharen | N.O.A Trinity')">
+    <meta name="twitter:description" content="@yield('og_description', 'Cryolipolyse, body sculpting en diode laserontharing bij N.O.A Trinity Body Shaping. Freeze it. Shape it. Love it.')">
+    <meta name="twitter:image" content="@yield('og_image', asset('images/merk/noa-trinity-logo.jpg'))">
 
     @fonts
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -44,7 +44,7 @@
 
                     {{-- Behandelingen met submenu --}}
                     <div class="relative group/dropdown">
-                        <button class="text-sm font-semibold transition-colors inline-flex items-center gap-1 {{ request()->routeIs('cryolipolyse') || request()->routeIs('body-sculpting') ? 'text-zwart' : 'text-zwart/70 hover:text-zwart' }}">
+                        <button class="text-sm font-semibold transition-colors inline-flex items-center gap-1 {{ request()->routeIs('cryolipolyse', 'body-sculpting', 'laserontharen') ? 'text-zwart' : 'text-zwart/70 hover:text-zwart' }}">
                             Behandelingen
                             <svg class="w-3.5 h-3.5 transition-transform group-hover/dropdown:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -54,6 +54,7 @@
                             <div class="bg-white rounded-xl shadow-lg border border-zwart/5 py-2 min-w-[220px]">
                                 <a href="{{ route('cryolipolyse') }}" class="block px-5 py-2.5 text-sm transition-colors {{ request()->routeIs('cryolipolyse') ? 'text-zwart bg-roze-light/30' : 'text-zwart/70 hover:text-zwart hover:bg-roze-light/30' }}">Cryolipolyse</a>
                                 <a href="{{ route('body-sculpting') }}" class="block px-5 py-2.5 text-sm transition-colors {{ request()->routeIs('body-sculpting') ? 'text-zwart bg-roze-light/30' : 'text-zwart/70 hover:text-zwart hover:bg-roze-light/30' }}">Body Sculpting</a>
+                                <a href="{{ route('laserontharen') }}" class="block px-5 py-2.5 text-sm transition-colors {{ request()->routeIs('laserontharen') ? 'text-zwart bg-roze-light/30' : 'text-zwart/70 hover:text-zwart hover:bg-roze-light/30' }}">Diode Laser – Laserontharen</a>
                             </div>
                         </div>
                     </div>
@@ -94,6 +95,7 @@
             <a href="{{ route('home') }}" class="mobile-menu-link font-serif text-3xl text-zwart hover:text-roze-dark transition-colors mobile-link opacity-0 translate-y-4">Home</a>
             <a href="{{ route('cryolipolyse') }}" class="mobile-menu-link font-serif text-3xl text-zwart hover:text-roze-dark transition-colors mobile-link opacity-0 translate-y-4">Cryolipolyse</a>
             <a href="{{ route('body-sculpting') }}" class="mobile-menu-link font-serif text-3xl text-zwart hover:text-roze-dark transition-colors mobile-link opacity-0 translate-y-4">Body Sculpting</a>
+            <a href="{{ route('laserontharen') }}" class="mobile-menu-link font-serif text-3xl text-zwart hover:text-roze-dark transition-colors mobile-link opacity-0 translate-y-4">Laserontharen</a>
             <a href="{{ route('gallerij') }}" class="mobile-menu-link font-serif text-3xl text-zwart hover:text-roze-dark transition-colors mobile-link opacity-0 translate-y-4">Gallerij</a>
             <a href="{{ route('over-mij') }}" class="mobile-menu-link font-serif text-3xl text-zwart hover:text-roze-dark transition-colors mobile-link opacity-0 translate-y-4">Over mij</a>
             <a href="{{ route('contact') }}" class="mobile-menu-link font-serif text-3xl text-zwart hover:text-roze-dark transition-colors mobile-link opacity-0 translate-y-4">Contact</a>
@@ -146,8 +148,9 @@
                     <a href="{{ route('home') }}">
                         <img src="/assets/logo.png" alt="NOA Trinity" class="max-h-10 brightness-0 invert">
                     </a>
+                    <p class="mt-3 text-xs tracking-[0.2em] uppercase text-roze">Freeze it. Shape it. Love it.</p>
                     <p class="mt-4 text-sm leading-relaxed text-white/50">
-                        Specialist in cryolipolyse (vetbevriezen) en body sculpting met de gecertificeerde Body Wizard van Medcos. Niet-invasieve lichaamsvormgeving met blijvend resultaat.
+                        N.O.A Trinity Body Shaping: cryolipolyse (vetbevriezen) met de Body-Wizard Duo, body sculpting en diode laserontharing. Niet-invasieve behandelingen met persoonlijke begeleiding.
                     </p>
                 </div>
 
@@ -157,6 +160,7 @@
                         <li><a href="{{ route('home') }}" class="text-sm font-semibold hover:text-roze transition-colors">Home</a></li>
                         <li><a href="{{ route('cryolipolyse') }}" class="text-sm font-semibold hover:text-roze transition-colors">Cryolipolyse</a></li>
                         <li><a href="{{ route('body-sculpting') }}" class="text-sm font-semibold hover:text-roze transition-colors">Body Sculpting</a></li>
+                        <li><a href="{{ route('laserontharen') }}" class="text-sm font-semibold hover:text-roze transition-colors">Laserontharen</a></li>
                         <li><a href="{{ route('gallerij') }}" class="text-sm font-semibold hover:text-roze transition-colors">Gallerij</a></li>
                         <li><a href="{{ route('over-mij') }}" class="text-sm font-semibold hover:text-roze transition-colors">Over mij</a></li>
                         <li><a href="{{ route('contact') }}" class="text-sm font-semibold hover:text-roze transition-colors">Contact</a></li>

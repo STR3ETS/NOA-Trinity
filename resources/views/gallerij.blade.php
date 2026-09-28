@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Galerij — Voor & Na Resultaten | N.O.A Trinity')
-@section('meta_description', 'Bekijk echte voor- en na-resultaten van cryolipolyse en body sculpting behandelingen bij N.O.A Trinity. Overtuig jezelf van de kracht van de Body Wizard.')
+@section('meta_description', 'Bekijk voor- en na-resultaten van cryolipolyse, body sculpting en laserontharen bij N.O.A Trinity. Resultaten van eigen klanten, gedeeld met hun toestemming.')
 
 @section('content')
 
@@ -58,6 +58,10 @@
                 <a href="{{ route('gallerij', ['type' => 'body-sculpting']) }}"
                    class="px-5 py-2.5 rounded-full text-sm font-medium transition-colors {{ $activeFilter === 'body-sculpting' ? 'bg-zwart text-creme' : 'bg-creme text-zwart/60 hover:text-zwart hover:bg-creme/80' }}">
                     Body Sculpting
+                </a>
+                <a href="{{ route('gallerij', ['type' => 'laserontharen']) }}"
+                   class="px-5 py-2.5 rounded-full text-sm font-medium transition-colors {{ $activeFilter === 'laserontharen' ? 'bg-zwart text-creme' : 'bg-creme text-zwart/60 hover:text-zwart hover:bg-creme/80' }}">
+                    Laserontharen
                 </a>
                 <a href="{{ route('gallerij', ['type' => 'combinatie']) }}"
                    class="px-5 py-2.5 rounded-full text-sm font-medium transition-colors {{ $activeFilter === 'combinatie' ? 'bg-zwart text-creme' : 'bg-creme text-zwart/60 hover:text-zwart hover:bg-creme/80' }}">

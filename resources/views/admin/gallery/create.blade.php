@@ -56,6 +56,7 @@
                         <option value="">Kies behandeling...</option>
                         <option value="cryolipolyse" {{ old('treatment_type') === 'cryolipolyse' ? 'selected' : '' }}>Cryolipolyse</option>
                         <option value="body-sculpting" {{ old('treatment_type') === 'body-sculpting' ? 'selected' : '' }}>Body Sculpting</option>
+                        <option value="laserontharen" {{ old('treatment_type') === 'laserontharen' ? 'selected' : '' }}>Laserontharen</option>
                         <option value="combinatie" {{ old('treatment_type') === 'combinatie' ? 'selected' : '' }}>Combinatie</option>
                     </select>
                     @error('treatment_type') <p class="text-red-500 text-xs mt-1.5">{{ $message }}</p> @enderror

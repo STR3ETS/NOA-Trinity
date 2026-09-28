@@ -21,6 +21,10 @@ Route::get('/body-sculpting', function () {
     return view('body-sculpting');
 })->name('body-sculpting');
 
+Route::get('/laserontharen', function () {
+    return view('laserontharen');
+})->name('laserontharen');
+
 Route::get('/over-mij', function () {
     return view('over-mij');
 })->name('over-mij');
