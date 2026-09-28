@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Contact | N.O.A Trinity — Cryolipolyse, Body Sculpting & Laserontharen')
-@section('meta_description', 'Neem contact op met N.O.A Trinity voor vragen over cryolipolyse, body sculpting, laserontharen of om een gratis consult in te plannen. Wij helpen je graag verder.')
+@section('title', 'Contact & afspraak maken | N.O.A Trinity Leeuwarden')
+@section('meta_description', 'Neem contact op met N.O.A Trinity in Leeuwarden voor vragen over cryolipolyse, body sculpting of laserontharen, of plan direct een gratis consult in.')
+@section('breadcrumb', 'Contact')
 
 @section('content')
 

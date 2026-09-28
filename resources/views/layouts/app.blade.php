@@ -3,29 +3,53 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title', 'Cryolipolyse, Body Sculpting & Laserontharen | N.O.A Trinity')</title>
-    <meta name="description" content="@yield('meta_description', 'N.O.A Trinity Body Shaping in Leeuwarden: cryolipolyse met de Body-Wizard Duo, body sculpting en diode laserontharing. Persoonlijke begeleiding en een behandelplan op maat.')">
+    @php
+        // yieldContent() levert al ge-escapete HTML; daarom hieronder {!! !!}.
+        $seoTitel = $__env->yieldContent('title', 'Cryolipolyse & Laserontharen in Leeuwarden | N.O.A Trinity');
+        $seoOmschrijving = $__env->yieldContent('meta_description', 'N.O.A Trinity Body Shaping in Leeuwarden: cryolipolyse, body sculpting en diode laserontharing. Persoonlijke begeleiding en een behandelplan op maat.');
+        $seoAfbeelding = $__env->yieldContent('og_image', asset('images/merk/noa-trinity-logo.jpg'));
+        $seoRobots = $__env->yieldContent('robots', 'index, follow');
+        $seoIndexeerbaar = ! str_contains($seoRobots, 'noindex');
+    @endphp
+    <title>{!! $seoTitel !!}</title>
+    <meta name="description" content="{!! $seoOmschrijving !!}">
     <meta name="keywords" content="@yield('meta_keywords', 'cryolipolyse, vetbevriezen, body sculpting, laserontharen, diode laser, lichaamsvormgeving, Body-Wizard Duo, MedCos, Leeuwarden')">
-    <meta name="robots" content="@yield('robots', 'index, follow')">
-    <link rel="canonical" href="{{ url()->current() }}">
+    <meta name="robots" content="{!! $seoRobots !!}">
+    @if($seoIndexeerbaar)
+        <link rel="canonical" href="{{ url()->current() }}">
+    @endif
+    <meta name="theme-color" content="#FAF9F6">
 
     {{-- Favicon --}}
     <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     {{-- Open Graph --}}
-    <meta property="og:title" content="@yield('og_title', 'Cryolipolyse, Body Sculpting & Laserontharen | N.O.A Trinity')">
-    <meta property="og:description" content="@yield('og_description', 'Cryolipolyse, body sculpting en diode laserontharing bij N.O.A Trinity Body Shaping. Freeze it. Shape it. Love it.')">
+    <meta property="og:title" content="{!! $seoTitel !!}">
+    <meta property="og:description" content="{!! $seoOmschrijving !!}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:image" content="@yield('og_image', asset('images/merk/noa-trinity-logo.jpg'))">
+    <meta property="og:image" content="{!! $seoAfbeelding !!}">
     <meta property="og:locale" content="nl_NL">
     <meta property="og:site_name" content="N.O.A Trinity">
 
     {{-- Twitter Card --}}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('og_title', 'Cryolipolyse, Body Sculpting & Laserontharen | N.O.A Trinity')">
-    <meta name="twitter:description" content="@yield('og_description', 'Cryolipolyse, body sculpting en diode laserontharing bij N.O.A Trinity Body Shaping. Freeze it. Shape it. Love it.')">
-    <meta name="twitter:image" content="@yield('og_image', asset('images/merk/noa-trinity-logo.jpg'))">
+    <meta name="twitter:title" content="{!! $seoTitel !!}">
+    <meta name="twitter:description" content="{!! $seoOmschrijving !!}">
+    <meta name="twitter:image" content="{!! $seoAfbeelding !!}">
+
+    {{-- Structured data (schema.org) --}}
+    @if($seoIndexeerbaar)
+        <script type="application/ld+json">{!! \App\Support\StructuredData::json(\App\Support\StructuredData::graph($settings ?? null, [
+            'url' => url()->current(),
+            'titel' => html_entity_decode($seoTitel, ENT_QUOTES | ENT_HTML5),
+            'omschrijving' => html_entity_decode($seoOmschrijving, ENT_QUOTES | ENT_HTML5),
+            'afbeelding' => html_entity_decode($seoAfbeelding, ENT_QUOTES | ENT_HTML5),
+            'kruimel' => html_entity_decode($__env->yieldContent('breadcrumb'), ENT_QUOTES | ENT_HTML5) ?: null,
+            'dienst' => html_entity_decode($__env->yieldContent('dienst'), ENT_QUOTES | ENT_HTML5) ?: null,
+        ])) !!}</script>
+    @endif
 
     @fonts
     @vite(['resources/css/app.css', 'resources/js/app.js'])

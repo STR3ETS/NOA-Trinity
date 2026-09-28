@@ -1,7 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Body Sculpting met de BodySculpting PRO-4 | N.O.A Trinity')
-@section('meta_description', 'Body sculpting bij N.O.A Trinity in Leeuwarden: gericht werken aan spieren en contouren van buik, billen en benen met de BodySculpting PRO-4. Niet-invasief, met persoonlijke intake.')
+@section('title', 'Body Sculpting in Leeuwarden | N.O.A Trinity')
+@section('meta_description', 'Body sculpting in Leeuwarden met de BodySculpting PRO-4: gericht werken aan spieren en contouren van buik, billen en benen. Plan een gratis consult.')
+@section('meta_keywords', 'body sculpting, body sculpting Leeuwarden, BodySculpting PRO-4, spieren trainen, buik, billen, contouren, lichaamsvormgeving')
+@section('breadcrumb', 'Body Sculpting')
+@section('dienst', 'Body sculpting')
 @section('og_image', asset('images/bodysculpting/bodysculpting-pro-4.jpg'))
 
 {{-- Techniek, duur, zones en contra-indicaties afstemmen op het behandelprotocol van de BodySculpting PRO-4 (Beauty & Bodyshaping). --}}
@@ -77,7 +80,7 @@
                     <div class="absolute -top-6 -right-6 w-24 h-24 bg-roze/40 rounded-full animate-float-slow"></div>
                     <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-lavendel/15 rounded-full animate-float-delay"></div>
                     <div class="relative aspect-[4/5] rounded-[60%_40%_55%_45%/45%_55%_45%_55%] overflow-hidden shadow-lg bg-white">
-                        <img src="/images/bodysculpting/bodysculpting-pro-4-apparaat.jpg" alt="De BodySculpting PRO-4 met vier handstukken" class="w-full h-full object-contain p-8" loading="eager">
+                        <img src="/images/bodysculpting/bodysculpting-pro-4-apparaat.jpg" alt="De BodySculpting PRO-4 met vier handstukken" class="w-full h-full object-contain p-8" loading="eager" fetchpriority="high">
                     </div>
                     <div class="absolute bottom-4 -left-2 sm:left-0 bg-white rounded-2xl px-5 py-4 shadow-lg">
                         <p class="font-serif font-bold text-sm">BodySculpting PRO-4</p>

@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Galerij — Voor & Na Resultaten | N.O.A Trinity')
-@section('meta_description', 'Bekijk voor- en na-resultaten van cryolipolyse, body sculpting en laserontharen bij N.O.A Trinity. Resultaten van eigen klanten, gedeeld met hun toestemming.')
+@section('title', 'Voor & na resultaten | N.O.A Trinity Leeuwarden')
+@section('meta_description', 'Bekijk voor- en na-resultaten van cryolipolyse, body sculpting en laserontharen bij N.O.A Trinity in Leeuwarden. Eigen klanten, gedeeld met hun toestemming.')
+@section('breadcrumb', 'Galerij')
 
 @section('content')
 

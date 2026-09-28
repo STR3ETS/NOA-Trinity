@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'Over mij | N.O.A Trinity')
-@section('meta_description', 'Maak kennis met de oprichter van N.O.A Trinity Body Shaping in Leeuwarden: cryolipolyse, body sculpting en diode laserontharing. Persoonlijk, professioneel en eerlijk.')
+@section('title', 'Over mij | N.O.A Trinity Body Shaping Leeuwarden')
+@section('meta_description', 'Maak kennis met N.O.A Trinity Body Shaping in Leeuwarden: persoonlijke begeleiding bij cryolipolyse, body sculpting en laserontharen. Professioneel en eerlijk.')
+@section('og_image', asset('images/merk/noa-trinity-logo.jpg'))
+@section('breadcrumb', 'Over mij')
 
 @section('content')
 

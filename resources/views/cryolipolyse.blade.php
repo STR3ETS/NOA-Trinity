@@ -1,7 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Cryolipolyse (Vetbevriezen) met de Body-Wizard Duo | N.O.A Trinity')
-@section('meta_description', 'Cryolipolyse bij N.O.A Trinity in Leeuwarden: plaatselijke vetophopingen gecontroleerd koelen met de Body-Wizard Duo van MedCos. Geen operatie, geen naalden, persoonlijke intake.')
+@section('title', 'Cryolipolyse (vetbevriezen) in Leeuwarden | N.O.A Trinity')
+@section('meta_description', 'Cryolipolyse in Leeuwarden: plaatselijke vetophopingen gecontroleerd koelen met de Body-Wizard Duo. Geen operatie of naalden. Plan een gratis consult.')
+@section('meta_keywords', 'cryolipolyse, cryolipolyse Leeuwarden, vetbevriezen, vet bevriezen, Body-Wizard Duo, MedCos, lokaal vet, lichaamscontouren')
+@section('breadcrumb', 'Cryolipolyse')
+@section('dienst', 'Cryolipolyse (vetbevriezen)')
 @section('og_image', asset('images/cryolipolyse/body-wizard-behandeling.jpg'))
 
 @php
@@ -77,7 +80,7 @@
                     <div class="absolute -top-6 -right-6 w-24 h-24 bg-roze/40 rounded-full animate-float-slow"></div>
                     <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-lavendel/15 rounded-full animate-float-delay"></div>
                     <div class="relative aspect-[4/5] rounded-[60%_40%_55%_45%/45%_55%_45%_55%] overflow-hidden shadow-lg">
-                        <img src="/images/cryolipolyse/body-wizard-duo.jpg" alt="De Body-Wizard Duo van MedCos voor cryolipolyse" class="w-full h-full object-cover" loading="eager">
+                        <img src="/images/cryolipolyse/body-wizard-duo.jpg" alt="De Body-Wizard Duo van MedCos voor cryolipolyse" class="w-full h-full object-cover" loading="eager" fetchpriority="high">
                     </div>
                     <div class="absolute bottom-4 -left-2 sm:left-0 bg-white rounded-2xl px-5 py-4 shadow-lg">
                         <p class="font-serif font-bold text-sm">Body-Wizard Duo</p>

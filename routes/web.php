@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\GalleryController as AdminGalleryController;
 use App\Http\Controllers\Admin\SettingsController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -46,6 +47,8 @@ Route::get('/cookiebeleid', function () {
 Route::get('/algemene-voorwaarden', function () {
     return view('algemene-voorwaarden');
 })->name('algemene-voorwaarden');
+
+Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
 
 // Admin auth routes
 Route::get('/admin/login', [AuthController::class, 'showLogin'])->name('admin.login');

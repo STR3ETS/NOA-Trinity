@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Cryolipolyse, Body Sculpting & Laserontharen | N.O.A Trinity')
-@section('meta_description', 'N.O.A Trinity Body Shaping in Leeuwarden: cryolipolyse met de Body-Wizard Duo, body sculpting en diode laserontharing. Persoonlijke begeleiding naar jouw lichaamsdoelen.')
+@section('title', 'Cryolipolyse & Laserontharen in Leeuwarden | N.O.A Trinity')
+@section('meta_description', 'Cryolipolyse, body sculpting en diode laserontharing bij N.O.A Trinity Body Shaping in Leeuwarden. Persoonlijke begeleiding en een gratis consult.')
+@section('og_image', asset('images/laser/laser-oksel-behandeling.jpg'))
 
 @section('content')
 
@@ -73,7 +74,7 @@
                                 src="/images/laser/laser-oksel-behandeling.jpg"
                                 alt="Ontspannen behandeling bij N.O.A Trinity Body Shaping"
                                 class="w-full h-full object-cover"
-                                loading="eager"
+                                loading="eager" fetchpriority="high"
                             >
                         </div>
 
@@ -127,7 +128,7 @@
                                 src="/images/laser/laser-oksel-behandeling.jpg"
                                 alt="Ontspannen behandeling bij N.O.A Trinity Body Shaping"
                                 class="w-full h-full object-cover"
-                                loading="eager"
+                                loading="eager" fetchpriority="high"
                             >
                         </div>
 
@@ -713,7 +714,7 @@
                     </div>
                     {{-- Afbeelding --}}
                     <div class="aspect-square overflow-hidden">
-                        <img src="{{ $post['img'] }}" alt="Instagram post" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <img src="{{ $post['img'] }}" alt="{{ Str::limit($post['caption'], 100) }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     </div>
                     {{-- Interactie icons --}}
                     <div class="px-3.5 pt-2.5">

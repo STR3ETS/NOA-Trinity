@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Algemene Voorwaarden | N.O.A Trinity')
-@section('meta_description', 'Algemene voorwaarden van N.O.A Trinity. Lees onze voorwaarden voor cryolipolyse en body sculpting behandelingen, afspraken, annulering, betaling en aansprakelijkheid.')
+@section('meta_description', 'De algemene voorwaarden van N.O.A Trinity voor behandelingen, afspraken, annuleren, betalen en aansprakelijkheid.')
 @section('robots', 'noindex, follow')
 
 @section('content')

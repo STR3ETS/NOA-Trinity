@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Diode Laser – Permanent laserontharen in Leeuwarden | N.O.A Trinity')
-@section('meta_description', 'Permanent laserontharen bij N.O.A Trinity in Leeuwarden met de Diode ICE 4-Wave Master: vier golflengtes, continue koeling en een behandeling afgestemd op jouw huid, haartype en behandelzone.')
-@section('meta_keywords', 'laserontharen, permanent laserontharen, diode laser, laserontharing Leeuwarden, Diode ICE 4-Wave Master, ontharen oksels, bikinilijn, benen')
+@section('title', 'Permanent laserontharen in Leeuwarden | N.O.A Trinity')
+@section('meta_description', 'Permanent laserontharen in Leeuwarden met de Diode ICE 4-Wave Master: vier golflengtes en koeling, afgestemd op je huid- en haartype. Plan je intake.')
+@section('meta_keywords', 'laserontharen, permanent laserontharen, laserontharen Leeuwarden, diode laser, Diode ICE 4-Wave Master, ontharen oksels, bikinilijn, benen')
+@section('breadcrumb', 'Laserontharen')
+@section('dienst', 'Laserontharing (diode laser)')
 @section('og_image', asset('images/laser/laser-benen-behandelaar.jpg'))
 
 @php
@@ -117,7 +119,7 @@
                     <div class="absolute -top-6 -right-6 w-24 h-24 bg-roze/40 rounded-full animate-float-slow"></div>
                     <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-lavendel/15 rounded-full animate-float-delay"></div>
                     <div class="relative aspect-[4/5] rounded-[60%_40%_55%_45%/45%_55%_45%_55%] overflow-hidden shadow-lg">
-                        <img src="/images/laser/laser-benen-behandelaar.jpg" alt="Diode laserontharing van de benen met de Diode ICE 4-Wave Master" class="w-full h-full object-cover" loading="eager">
+                        <img src="/images/laser/laser-benen-behandelaar.jpg" alt="Diode laserontharing van de benen met de Diode ICE 4-Wave Master" class="w-full h-full object-cover" loading="eager" fetchpriority="high">
                     </div>
                     <div class="absolute bottom-4 -left-2 sm:left-0 bg-white rounded-2xl px-5 py-4 shadow-lg">
                         <p class="font-serif font-bold text-sm">Diode ICE 4-Wave Master</p>

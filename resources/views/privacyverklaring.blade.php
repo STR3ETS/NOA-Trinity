@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Privacyverklaring | N.O.A Trinity')
-@section('meta_description', 'Privacyverklaring van N.O.A Trinity. Lees hoe wij omgaan met jouw persoonsgegevens, welke gegevens wij verzamelen, waarvoor wij ze gebruiken en welke rechten je hebt onder de AVG.')
+@section('meta_description', 'Lees hoe N.O.A Trinity omgaat met je persoonsgegevens: welke gegevens we verzamelen, waarvoor we ze gebruiken en welke rechten je hebt onder de AVG.')
 @section('robots', 'noindex, follow')
 
 @section('content')
