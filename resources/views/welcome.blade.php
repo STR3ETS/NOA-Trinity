@@ -38,9 +38,9 @@
                         Cryolipolyse, body sculpting en diode laserontharing bij N.O.A Trinity Body Shaping in Leeuwarden. Niet-invasieve behandelingen met professionele apparatuur, persoonlijke aandacht en een behandelplan dat bij jou past.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                        <a href="{{ route('contact') }}" class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
+                        <x-afspraak-link class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                             Boek een gratis consult
-                        </a>
+                        </x-afspraak-link>
                         <a href="#diensten" class="inline-flex items-center justify-center border border-zwart/15 text-zwart px-8 py-4 rounded-full text-sm font-semibold hover:border-zwart/30 hover:text-roze-dark transition-colors">
                             Ontdek behandelingen
                         </a>
@@ -195,9 +195,9 @@
                         Daarbij werk ik met professionele apparatuur en combineer ik ervaring met persoonlijke begeleiding. Mijn doel is om samen met jou te werken aan zichtbare, natuurlijke resultaten die passen bij jouw lichaam.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="{{ route('contact') }}" class="inline-flex items-center justify-center bg-zwart text-creme px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
+                        <x-afspraak-link class="inline-flex items-center justify-center bg-zwart text-creme px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                             Maak een afspraak
-                        </a>
+                        </x-afspraak-link>
                         <a href="{{ route('over-mij') }}" class="inline-flex items-center gap-2 text-sm font-semibold text-roze-dark hover:text-zwart transition-colors py-3.5">
                             Meer over mij
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -293,9 +293,9 @@
 
             {{-- CTA --}}
             <div class="reveal mt-16 text-center">
-                <a href="{{ route('contact') }}" class="inline-flex items-center justify-center bg-zwart text-creme px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
+                <x-afspraak-link class="inline-flex items-center justify-center bg-zwart text-creme px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                     Gratis consult inplannen
-                </a>
+                </x-afspraak-link>
             </div>
         </div>
     </section>
@@ -385,9 +385,9 @@
 
             {{-- CTA --}}
             <div class="reveal mt-16 text-center">
-                <a href="{{ route('contact') }}" class="inline-flex items-center justify-center bg-zwart text-creme px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
+                <x-afspraak-link class="inline-flex items-center justify-center bg-zwart text-creme px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                     Ervaar het zelf
-                </a>
+                </x-afspraak-link>
             </div>
         </div>
     </section>
@@ -473,9 +473,9 @@
 
             {{-- CTA --}}
             <div class="reveal mt-16 text-center">
-                <a href="{{ route('contact') }}" class="inline-flex items-center justify-center bg-zwart text-creme px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
+                <x-afspraak-link class="inline-flex items-center justify-center bg-zwart text-creme px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                     Plan jouw gratis consult
-                </a>
+                </x-afspraak-link>
             </div>
         </div>
     </section>
@@ -671,9 +671,9 @@
         <div class="max-w-[1400px] mx-auto px-6 lg:px-8">
             {{-- CTA --}}
             <div class="reveal mt-16 text-center">
-                <a href="{{ route('contact') }}" class="inline-flex items-center justify-center bg-zwart text-creme px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
+                <x-afspraak-link class="inline-flex items-center justify-center bg-zwart text-creme px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                     Start jouw transformatie
-                </a>
+                </x-afspraak-link>
             </div>
         </div>
     </section>
@@ -697,9 +697,12 @@
             ];
             @endphp
 
+            @php($instagram = $settings->instagram_url ?: route('contact'))
+            @php($handle = $settings->instagram_handle ?: 'noa.trinity.bodyshaping')
+
             <div class="reveal grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
                 @foreach($posts as $post)
-                <a href="#" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl border border-zwart/5 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <a href="{{ $instagram }}" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl border border-zwart/5 overflow-hidden hover:shadow-lg transition-shadow duration-300">
                     {{-- Header: profiel --}}
                     <div class="flex items-center gap-2.5 px-3.5 py-2.5">
                         <div class="w-8 h-8 rounded-full bg-gradient-to-br from-[#f09433] via-[#dc2743] to-[#bc1888] p-[1.5px] shrink-0">
@@ -708,7 +711,7 @@
                             </div>
                         </div>
                         <div class="min-w-0">
-                            <p class="text-xs font-semibold text-zwart leading-tight">noatrinity</p>
+                            <p class="text-xs font-semibold text-zwart leading-tight truncate">{{ $handle }}</p>
                             <p class="text-[10px] text-zwart/40 leading-tight">N.O.A Trinity</p>
                         </div>
                     </div>
@@ -733,7 +736,7 @@
                     </div>
                     {{-- Caption --}}
                     <div class="px-3.5 pb-3">
-                        <p class="text-xs text-zwart/70 leading-relaxed line-clamp-2"><span class="font-semibold text-zwart">noatrinity</span> {{ $post['caption'] }}</p>
+                        <p class="text-xs text-zwart/70 leading-relaxed line-clamp-2"><span class="font-semibold text-zwart">{{ $handle }}</span> {{ $post['caption'] }}</p>
                         <p class="text-[10px] text-zwart/30 mt-1.5 uppercase">{{ $post['date'] }} geleden</p>
                     </div>
                 </a>
@@ -742,11 +745,11 @@
 
             {{-- Volg knop --}}
             <div class="reveal mt-10 sm:mt-14 text-center">
-                <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-zwart text-creme px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
+                <a href="{{ $instagram }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-zwart text-creme px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
                     </svg>
-                    Volg @noatrinity
+                    Volg @{{ $handle }}
                 </a>
             </div>
         </div>
@@ -767,12 +770,12 @@
                 Boek een gratis en vrijblijvend consult voor cryolipolyse, body sculpting of laserontharen. Samen bespreken we jouw doelen en stellen we een persoonlijk behandelplan op.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel:{{ $settings->telefoon_link }}" class="inline-flex items-center justify-center gap-2 bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
+                <x-afspraak-link class="inline-flex items-center justify-center gap-2 bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                     </svg>
-                    Bel ons
-                </a>
+                    Plan je afspraak online
+                </x-afspraak-link>
                 <a href="mailto:{{ $settings->email }}" class="inline-flex items-center justify-center gap-2 border border-zwart/15 text-zwart px-8 py-4 rounded-full text-sm font-semibold hover:border-zwart/30 hover:text-roze-dark transition-colors">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>

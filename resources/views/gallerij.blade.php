@@ -33,9 +33,9 @@
                 Bekijk de echte resultaten van onze behandelingen. Elke transformatie vertelt een uniek verhaal van zelfvertrouwen en welzijn.
             </p>
             <div class="reveal flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="{{ route('contact') }}" class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
+                <x-afspraak-link class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                     Boek een gratis consult
-                </a>
+                </x-afspraak-link>
             </div>
         </div>
     </section>
@@ -128,9 +128,9 @@
                 Bekijk onze resultaten en overtuig jezelf. Boek een gratis consult en ontdek wat we voor jou kunnen betekenen.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="{{ route('contact') }}" class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
+                <x-afspraak-link class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                     Gratis consult inplannen
-                </a>
+                </x-afspraak-link>
                 <a href="{{ route('cryolipolyse') }}" class="inline-flex items-center justify-center border border-zwart/15 text-zwart px-8 py-4 rounded-full text-sm font-semibold hover:border-zwart/30 hover:text-roze-dark transition-colors">
                     Bekijk behandelingen
                 </a>

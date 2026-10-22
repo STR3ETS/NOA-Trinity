@@ -57,9 +57,9 @@
                         Gericht werken aan plaatselijke vetophopingen, zonder operatie en zonder naalden. Bij N.O.A Trinity behandel ik met de Body-Wizard Duo van MedCos — altijd na een persoonlijke intake.
                     </p>
                     <div class="reveal flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-                        <a href="{{ route('contact', ['behandeling' => 'cryolipolyse']) }}" class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
+                        <x-afspraak-link behandeling="cryolipolyse" class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                             Boek een gratis consult
-                        </a>
+                        </x-afspraak-link>
                         <a href="#wat-is-cryolipolyse" class="inline-flex items-center justify-center border border-zwart/15 text-zwart px-8 py-4 rounded-full text-sm font-semibold hover:border-zwart/30 hover:text-roze-dark transition-colors">
                             Lees meer
                         </a>
@@ -422,9 +422,9 @@
                 Tijdens een persoonlijke intake bespreken we jouw wensen en bekijken we welke behandeling het beste bij jouw lichaam en doelen past.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="{{ route('contact', ['behandeling' => 'cryolipolyse']) }}" class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
+                <x-afspraak-link behandeling="cryolipolyse" class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                     Boek een gratis consult
-                </a>
+                </x-afspraak-link>
                 <a href="{{ route('body-sculpting') }}" class="inline-flex items-center justify-center border border-zwart/15 text-zwart px-8 py-4 rounded-full text-sm font-semibold hover:border-zwart/30 hover:text-roze-dark transition-colors">
                     Bekijk body sculpting
                 </a>

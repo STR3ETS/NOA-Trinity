@@ -96,9 +96,9 @@
                         Gladde huid. Minder ongewenste haargroei. Meer vrijheid. Met de Diode ICE 4-Wave Master stem ik iedere behandeling af op jouw huid, haartype en behandelzone.
                     </p>
                     <div class="reveal flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-                        <a href="{{ route('contact', ['behandeling' => 'laserontharen']) }}" class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
+                        <x-afspraak-link behandeling="laserontharen" class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                             Plan jouw intake
-                        </a>
+                        </x-afspraak-link>
                         <a href="#wat-is-laserontharing" class="inline-flex items-center justify-center border border-zwart/15 text-zwart px-8 py-4 rounded-full text-sm font-semibold hover:border-zwart/30 hover:text-roze-dark transition-colors">
                             Lees meer
                         </a>
@@ -595,9 +595,9 @@
                 Plan jouw persoonlijke intake bij N.O.A Trinity Body Shaping. We bekijken je huid, je haar en het gewenste behandelgebied en bespreken wat je kunt verwachten.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="{{ route('contact', ['behandeling' => 'laserontharen']) }}" class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
+                <x-afspraak-link behandeling="laserontharen" class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                     Plan jouw intake
-                </a>
+                </x-afspraak-link>
                 <a href="{{ route('home') }}#diensten" class="inline-flex items-center justify-center border border-zwart/15 text-zwart px-8 py-4 rounded-full text-sm font-semibold hover:border-zwart/30 hover:text-roze-dark transition-colors">
                     Bekijk alle behandelingen
                 </a>

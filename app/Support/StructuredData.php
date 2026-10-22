@@ -126,14 +126,26 @@ class StructuredData
             ];
         }
 
-        $openingstijden = array_filter([
-            self::openingstijd(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], $settings->openingstijden_ma_vr),
-            self::openingstijd(['Saturday'], $settings->openingstijden_za),
-            self::openingstijd(['Sunday'], $settings->openingstijden_zo),
-        ]);
+        $engelseDagen = [
+            'ma' => 'Monday', 'di' => 'Tuesday', 'wo' => 'Wednesday', 'do' => 'Thursday',
+            'vr' => 'Friday', 'za' => 'Saturday', 'zo' => 'Sunday',
+        ];
+
+        $openingstijden = [];
+        foreach ($engelseDagen as $code => $dag) {
+            $spec = self::openingstijd([$dag], $settings->{"openingstijden_$code"});
+            if ($spec) {
+                $openingstijden[] = $spec;
+            }
+        }
 
         if ($openingstijden) {
-            $bedrijf['openingHoursSpecification'] = array_values($openingstijden);
+            $bedrijf['openingHoursSpecification'] = $openingstijden;
+        }
+
+        $profielen = array_values(array_filter([$settings->instagram_url, $settings->facebook_url]));
+        if ($profielen) {
+            $bedrijf['sameAs'] = $profielen;
         }
 
         return $bedrijf;

@@ -33,9 +33,9 @@
             <p class="reveal text-base sm:text-lg md:text-xl text-zwart/70 leading-relaxed max-w-2xl mx-auto mb-8 sm:mb-10">
                 Welkom! Ik ben de oprichter van N.O.A Trinity en het is mijn passie om mensen te helpen zich zelfverzekerd en goed te voelen in hun eigen lichaam. Met cryolipolyse, body sculpting en diode laserontharing begeleid ik jou persoonlijk naar jouw lichaamsdoelen.
             </p>
-            <a href="{{ route('contact') }}" class="reveal inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
+            <x-afspraak-link class="reveal inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                 Maak kennis
-            </a>
+            </x-afspraak-link>
         </div>
     </section>
 
@@ -331,9 +331,9 @@
                 Ik nodig je graag uit voor een vrijblijvend kennismakingsgesprek. Samen bespreken we jouw wensen en kijken we welke behandeling het beste bij jou past. Geen verplichtingen, alleen een eerlijk en persoonlijk advies.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="{{ route('contact') }}" class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
+                <x-afspraak-link class="inline-flex items-center justify-center bg-zwart text-creme px-8 py-4 rounded-full text-sm font-semibold hover:bg-roze-dark transition-colors">
                     Maak een afspraak
-                </a>
+                </x-afspraak-link>
                 <a href="{{ route('home') }}#diensten" class="inline-flex items-center justify-center border border-zwart/15 text-zwart px-8 py-4 rounded-full text-sm font-semibold hover:border-zwart/30 hover:text-roze-dark transition-colors">
                     Bekijk behandelingen
                 </a>
